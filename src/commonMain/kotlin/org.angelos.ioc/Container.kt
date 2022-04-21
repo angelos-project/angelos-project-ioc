@@ -28,6 +28,12 @@ abstract class Container<N, M: Module> {
     private val config = AtomicReference<Config<N, M>>(mapOf())
     private val modules = sharedMutableMapOf<N, M>()
 
+    /**
+     * Executes the lambda as a higher-order function which populates the container.
+     *
+     * @param block
+     * @receiver
+     */
     fun config(block: () -> Config<N, M>) { config.set(block()) }
 
     private fun <M2: M> reg(key: N, module: M2): M2 {
@@ -35,6 +41,13 @@ abstract class Container<N, M: Module> {
         return module
     }
 
+    /**
+     * Get operator that allows the container to be accessed like a map.
+     *
+     * @param M2 The module type being returned
+     * @param key Key value of module to receive
+     * @return The actual module
+     */
     @Suppress("UNCHECKED_CAST")
     open operator fun <M2: M>get(key: N): M2 = when(key) {
         in modules -> modules[key]!!

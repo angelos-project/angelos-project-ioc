@@ -17,5 +17,4 @@ package org.angelos.ioc
 /**
  * When creating a new type of container it should define its own module type that implements this interface.
  */
-interface Module {
-}
+interface Module

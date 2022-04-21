@@ -21,5 +21,4 @@ package org.angelos.ioc
  *
  * @param message The error message that happened in relationship to a container issue.
  */
-class ContainerException internal constructor(message: String) : RuntimeException(message){
-}
+class ContainerException internal constructor(message: String) : RuntimeException(message)

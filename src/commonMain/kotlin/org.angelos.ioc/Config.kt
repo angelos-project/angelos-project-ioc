@@ -14,4 +14,7 @@
  */
 package org.angelos.ioc
 
+/**
+ * Is a key-value pair for the container.
+ */
 typealias Config<N, M> = Map<N, (key: N) -> M>

@@ -33,10 +33,19 @@ class TestContainer: Container<String, TestModule>() {
 }
 
 
+/**
+ * Container unit test
+ *
+ * @constructor Create empty Container test
+ */
 class ContainerTest {
 
     lateinit var ioc: TestContainer
 
+    /**
+     * Set up for unit testing.
+     *
+     */
     @BeforeTest
     fun setUp(){
         ioc = TestContainer()
@@ -50,6 +59,9 @@ class ContainerTest {
         }
     }
 
+    /**
+     * Unit test for configuring an example IoC.
+     */
     @Test
     fun config() {
         val fourth: FourthModule = ioc["fourth"]
