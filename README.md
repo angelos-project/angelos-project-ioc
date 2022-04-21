@@ -1,4 +1,4 @@
-# Inversion of Container 
+# Inversion of Control  for Kotlin with DSL
 IoC implementation for Kotlin/Multiplatform with multithreading.
 
 ```kotlin
