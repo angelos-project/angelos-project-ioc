@@ -2,6 +2,7 @@
 IoC implementation for Kotlin/Multiplatform with multithreading.
 
 [![Build Status](https://app.travis-ci.com/angelos-project/angelos-project-ioc.svg?branch=master)](https://app.travis-ci.com/angelos-project/angelos-project-ioc)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c285f426e9ed4797989b68044bffdb92)](https://www.codacy.com/gh/angelos-project/angelos-project-ioc/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=angelos-project/angelos-project-ioc&amp;utm_campaign=Badge_Grade)
 
 ```kotlin
 import org.angelos.ioc.Config
