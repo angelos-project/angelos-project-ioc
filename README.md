@@ -1,6 +1,8 @@
 # Inversion of Control  for Kotlin with DSL
 IoC implementation for Kotlin/Multiplatform with multithreading.
 
+[![Build Status](https://app.travis-ci.com/angelos-project/angelos-project-ioc.svg?branch=master)](https://app.travis-ci.com/angelos-project/angelos-project-ioc)
+
 ```kotlin
 import org.angelos.ioc.Config
 import org.angelos.ioc.Container
