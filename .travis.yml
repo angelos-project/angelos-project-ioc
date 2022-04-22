@@ -1,4 +1,4 @@
-install: gradle wrapper
+install: gradle wrapper --gradle-version 7.4.2
 
 language: java
 
