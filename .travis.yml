@@ -1,5 +1,10 @@
+language: java
+install: skip
+
 os:
   - osx
+# dist: trusty
+jdk: oraclejdk8
 
 script:
-  - ./gradlew build
+  - ./gradlew build --scan
